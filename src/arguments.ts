@@ -34,7 +34,6 @@ export default () => {
     });
 
     const finalArgs = parser.parseArgs();
-    console.log(finalArgs);
     return finalArgs;
 };
 
