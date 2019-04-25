@@ -1,7 +1,20 @@
 {
-    "name": "json-to-excel",
+    "name": "falconir",
     "version": "1.0.0",
     "description": "Converts an abitrary json array to excel.",
+    "author": "Stephen Ashmore",
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/StephenAshmore/falconir.git"
+    },
+    "bugs": {
+        "url": "https://github.com/StephenAshmore/falconir/issues"
+    },
+    "bin": "./bin/main.js",
+    "files": [
+        "bin"
+    ],
     "scripts": {
         "build": "echo building... && npm-run-all build:* && echo done!",
         "build:ts": "tsc",
@@ -12,7 +25,8 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "uninstall": "rm -rf node_modules/ && npm run clean",
         "prettify": "find ./src/ ./tests/ -name \\*.tsx -o -name \\*.ts -o -name //*.css| xargs prettier --find-config-path --write",
-        "precommit": "lint-staged"
+        "precommit": "lint-staged",
+        "prepublish": "npm run build"
     },
     "lint-staged": {
         "*.{ts,json}": [
@@ -20,24 +34,21 @@
             "git add"
         ]
     },
-    "author": "Stephen Ashmore",
-    "license": "ISC",
     "devDependencies": {
-        "@types/lodash": "^4.14.123",
-        "@types/node": "^11.13.4",
-        "npm-run-all": "^4.1.5",
-        "prettier": "^1.17.0",
-        "tslint": "^5.15.0",
-        "tslint-config-prettier": "^1.18.0",
-        "tslint-eslint-rules": "^5.4.0",
-        "tslint-plugin-prettier": "^2.0.1",
-        "typescript": "^3.4.3"
+        "@types/argparse": "1.0.36",
+        "@types/lodash": "4.14.123",
+        "@types/node": "11.13.4",
+        "npm-run-all": "4.1.5",
+        "prettier": "1.17.0",
+        "tslint": "5.15.0",
+        "tslint-config-prettier": "1.18.0",
+        "tslint-eslint-rules": "5.4.0",
+        "tslint-plugin-prettier": "2.0.1",
+        "typescript": "3.4.3"
     },
     "dependencies": {
-        "@types/argparse": "^1.0.36",
-        "argparse": "^1.0.10",
-        "larg": "0.0.4",
-        "lodash": "^4.17.11",
-        "xlsx": "^0.14.2"
+        "argparse": "1.0.10",
+        "lodash": "4.17.11",
+        "xlsx": "0.14.2"
     }
 }
