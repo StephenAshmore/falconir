@@ -28,8 +28,6 @@ class Converter {
                 });
             }
 
-            console.log(json[0]);
-
             // conversion step:
             const wb = xlsx.utils.book_new();
             xlsx.utils.book_append_sheet(wb, xlsx.utils.json_to_sheet(json));

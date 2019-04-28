@@ -1,6 +1,6 @@
 {
     "name": "falconir",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Converts an abitrary json array to excel.",
     "author": "Stephen Ashmore",
     "license": "ISC",
@@ -13,7 +13,8 @@
     },
     "bin": "./bin/main.js",
     "files": [
-        "bin"
+        "package.json",
+        "bin/"
     ],
     "scripts": {
         "build": "echo building... && npm-run-all build:* && echo done!",
