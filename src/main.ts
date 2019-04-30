@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import convertArguments from './arguments';
 import converter from './converter';
 
