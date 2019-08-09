@@ -34,7 +34,7 @@ export default () => {
     });
 
     const finalArgs = parser.parseArgs();
-    return finalArgs;
+    return finalArgs as IArguments;
 };
 
 export { IArguments };

@@ -1,9 +1,9 @@
 {
     "name": "falconir",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Converts an abitrary json array to excel.",
     "author": "Stephen Ashmore",
-    "license": "ISC",
+    "license": "MIT",
     "repository": {
         "type": "git",
         "url": "git://github.com/StephenAshmore/falconir.git"
