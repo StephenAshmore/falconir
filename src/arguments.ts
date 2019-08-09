@@ -10,7 +10,7 @@ interface IArguments {
 export default () => {
     const parser = new argparse.ArgumentParser({
         version: '1.0.0',
-        description: 'json-to-excel',
+        description: 'falconir',
     });
     parser.addArgument(['-i', '--input'], {
         dest: 'input',
