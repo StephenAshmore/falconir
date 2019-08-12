@@ -8,10 +8,10 @@ import { IArguments } from './arguments';
 class Converter {
     convertToJson(args: IArguments) {
         try {
-            const fileContents = fs.readFileSync(args.input);
-            const wb = xlsx.read(fileContents);
+            // const fileContents = fs.readFileSync(args.input);
+            const wb = xlsx.readFile(args.input);
 
-            let json = xlsx.utils.sheet_to_json(wb.Sheets[wb.SheetNames[0]]) as any;
+            let json = xlsx.utils.sheet_to_json(wb.Sheets[wb.SheetNames[0]], { raw: false }) as any;
 
             // removal step:
             if (args.remove) {
