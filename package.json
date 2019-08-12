@@ -1,6 +1,6 @@
 {
     "name": "falconir",
-    "version": "1.0.4",
+    "version": "1.1.0",
     "description": "Converts an abitrary json array to excel.",
     "author": "Stephen Ashmore",
     "license": "MIT",
