@@ -49,6 +49,6 @@
     "dependencies": {
         "argparse": "1.0.10",
         "lodash": "4.17.15",
-        "xlsx": "0.14.2"
+        "xlsx": "0.17.0"
     }
 }
